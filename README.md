@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Motivación
 
-You can use the [editor on GitHub](https://github.com/dafguerreroal/VisualComputing/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+El taller realizado busca abarcar la tematica de procesamiento de imagen vista en el curso de Computación Visual de la Universidad Nacional de Colombia.
 
 ### Markdown
 
