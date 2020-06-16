@@ -1,8 +1,15 @@
 ## Motivación
 
 El taller realizado busca abarcar la tematica de procesamiento de imagen vista en el curso de Computación Visual de la Universidad Nacional de Colombia.
-
-### Markdown
+## Integrantes
+Jonathan Ricardo Galvis [jrgalvisg](https://github.com/jrgalvisg)
+David Fernando Guerrero [dafguerreroal](https://github.com/dafguerreroal)
+### Objetivos
+* Convertir una imagen y un video a su escala de grises.
+* Aplicar algunas mascaras de convolucion a una imagen y un video.
+* Convertir una imagen  y un video a su equivalente en ascii.
+* Desplegar el histograma de intensidad para una imagen
+* Medir la eficiencia computacional para las operaciones realizadas a los videos.
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
