@@ -134,61 +134,26 @@ Se toma un video extrayendo sus frames para poder ser tratados como imagenes ind
 
 Imagen Original -- Escala de grises con promedio -- Escala de grises con Luma
 
-+ ![Gray Scale](/Resultados/out_grey.JPG)
++ ![Gray Scale Image](/Resultados/out_grey.JPG)
++ ![Gray Scale Video](/Resultados/grey.gif)
+
 
 **Convolution Masks**:
 
-Imagen Original -- GaussianBlur(3x3) -- EdgeDetection -- Sharpen
+Imagen Original -- GaussianBlur -- EdgeDetection -- Sharpen
 
-+ ![Convolution Masks](/Resultados/out_masks.JPG)
++ ![Convolution Masks Image](/Resultados/out_masks.JPG)
++ ![Convolution Masks Blur](/Resultados/blur.gif)
++ ![Convolution Masks Edge](/Resultados/edge.gif)
++ ![Convolution Masks Sharpen](/Resultados/sharpen.gif)
 
 **Histrogram**:
 + ![Gray Scale](/Resultados/out_histogram.JPG)
 
 **Ascii Software**:
-+ ![Gray Scale](/Resultados/out_ascii_software.JPG)
++ ![Gray Scale Image](/Resultados/out_ascii_software.JPG)
++ ![Gray Scale Video](/Resultados/ascii2.gif)
 
 **Ascii Shaders**:
-+ ![Gray Scale](/Resultados/out_ascii_hardware.JPG)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dafguerreroal/VisualComputing/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
++ ![Gray Scale Image](/Resultados/out_ascii_hardware.JPG)
++ ![Gray Scale Video](/Resultados/ascii1.gif)
