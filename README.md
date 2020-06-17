@@ -125,9 +125,6 @@ Para la implementacion de ASCII por hardware, se uso como base el siguiente [sha
 
 Se toma un video extrayendo sus frames para poder ser tratados como imagenes independientes, se les aplica el mismo [shader](https://github.com/georgehenryrowe/ShadersForProcessing3/blob/master/data/ascii.glsl) usado para las imagenes, se guardan en un vector del tamaño del video y es este vector el que se dibujara en el canvas.
 
-## Medir la eficiencia computacional para las operaciones realizadas a los videos:
-
-
 ## Resultados
 
 **Gray Scale**:
@@ -157,3 +154,11 @@ Imagen Original -- GaussianBlur -- EdgeDetection -- Sharpen
 **Ascii Shaders**:
 + ![Gray Scale Image](/Resultados/out_ascii_hardware.JPG)
 + ![Gray Scale Video](/Resultados/ascii1.gif)
+
+
+## Conclusiones:
+
+- Lo primero que se puede observar respecto a la medida de eficiencia computacional, se refleja con mayor facilidad en el procesamiento de video, mas especificamente en la conversión a caracteres ascii. El procesamiento por software refleja un máximo de 14 fps en un video de 160*90, mientras que el procesamiento por hardware, haciendo uso de shaders, refleja un máximo de 60 fps.
+- En ambos casos, procesamiento por software o por harware se evidencia un gasto computacional bastante notorio y el aumnento en el tamaño de las imagenes o los videos es proporcional a dicho gasto mencionado.
+- Para videos de mas de 240p el procesamiento para escala de grises y máscaras de convolución por software, tiene un costo computacional tan alto que durante el proceso el vídeo tiende a relentizarse, efecto lag dados los bajos fps.
+- La conversión a caracteres ascii para imagenes de un tamaño considerable toma un tiempo de ejecución bastante alto en comparación con el proceso por shaders, en donde se puede ver un resultado mas inmediato.
