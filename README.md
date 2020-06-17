@@ -127,6 +127,10 @@ Para la implementacion de ASCII por hardware, se uso como base el siguiente [sha
 
 Se toma un video extrayendo sus frames para poder ser tratados como imagenes independientes, se les aplica el mismo [shader](https://github.com/georgehenryrowe/ShadersForProcessing3/blob/master/data/ascii.glsl) usado para las imagenes, se guardan en un vector del tamaño del video y es este vector el que se dibujara en el canvas.
 
+* **Medir la eficiencia computacional para las operaciones realizadas a los videos**:
+
+La eficiencia medida computacionalmente en el caso de los efectos por hardware logra llegar hasta los 60 fps por lo que podemos notar una gran mejora en el rendimiento respecto a hacerlo por software.
+
 ## Resultados
 
 **Gray Scale**:
@@ -156,10 +160,6 @@ Imagen Original -- GaussianBlur -- EdgeDetection -- Sharpen
 **Ascii Shaders**:
 + ![Gray Scale Image](/Resultados/out_ascii_hardware.JPG)
 + ![Gray Scale Video](/Resultados/ascii1.gif)
-
-* **Medir la eficiencia computacional para las operaciones realizadas a los videos**:
-
-La eficiencia medida computacionalmente en el caso de los efectos por hardware logra llegar hasta los 60 fps por lo que podemos notar una gran mejora en el rendimiento respecto a hacerlo por software.
 
 ## Conclusiones:
 
