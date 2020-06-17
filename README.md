@@ -14,7 +14,7 @@ El taller realizado busca abarcar la tematica de procesamiento de imagen vista e
 * Medir la eficiencia computacional para las operaciones realizadas a los videos.
 
 ## Metodologia
-**Procesamiento por software:**
+### Procesamiento por software:
 *  **Conversión a escala de grises**: 
 
 **Imagen**: 
@@ -48,6 +48,7 @@ Se  aplican  3 mascaras de convolución recorriendo la imagen pixel a pixel, apl
 |---|---|---|
 | 0 | 0 | 0 |
 | -1 | 0 | 1|
+**Video**: Se usa  el shader de luma  y se opera  cada frame  del video como  una imagen.
 
 ------------
 
@@ -91,8 +92,9 @@ Se agrega un histograma a una imagen  que nos va a representar  distribución de
 
 * **Medir la eficiencia computacional para las operaciones realizadas a los videos**:
 
+La eficiencia medida computacionalmente en el caso de los efectos por software logra llegar hasta los 14fps con una imagen de 160.
 
-**Procesamiento por hardware:**
+### Procesamiento por hardware:
 
 *  **Conversión a escala de grises**:
 
@@ -155,6 +157,9 @@ Imagen Original -- GaussianBlur -- EdgeDetection -- Sharpen
 + ![Gray Scale Image](/Resultados/out_ascii_hardware.JPG)
 + ![Gray Scale Video](/Resultados/ascii1.gif)
 
+* **Medir la eficiencia computacional para las operaciones realizadas a los videos**:
+
+La eficiencia medida computacionalmente en el caso de los efectos por hardware logra llegar hasta los 60 fps por lo que podemos notar una gran mejora en el rendimiento respecto a hacerlo por software.
 
 ## Conclusiones:
 
