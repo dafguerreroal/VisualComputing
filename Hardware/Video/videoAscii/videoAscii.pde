@@ -4,7 +4,7 @@ Movie myMovie;
 PShader ascii;
 
 void setup() {
-  size(1920,540, P3D);
+  size(852,240, P3D);
   
   //LOAD IN VIDEO
   myMovie = new Movie(this, "426.mp4");
@@ -17,9 +17,9 @@ void setup() {
 }
 
 void draw() {
-  image(myMovie, 0, 0, 960,540);
+  image(myMovie, 0, 0, 426,240);
   filter(ascii);  
-  image(myMovie, 960, 0, 960,540); 
+  image(myMovie, 436, 0, 426,240); 
 }
 
 void movieEvent(Movie m) {

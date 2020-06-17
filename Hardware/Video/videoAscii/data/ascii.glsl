@@ -35,7 +35,7 @@ void main() {
 	if (luma > 0.7) n = 13199452.0; // @
 	if (luma > 0.8) n = 11512810.0; // #
 
-	vec2 p = mod(uv/4.0, 2.0) - vec2(1.0);
+	vec2 p = mod(uv/3.0, 2.0) - vec2(1.0);
 	vec3 _out = luma*vec3(character(n, p));
 
 	gl_FragColor = vec4(_out, 1.0);
