@@ -48,7 +48,6 @@ Se  aplican  3 mascaras de convolución recorriendo la imagen pixel a pixel, apl
 |---|---|---|
 | 0 | 0 | 0 |
 | -1 | 0 | 1|
-**Video**: Se usa  el shader de luma  y se opera  cada frame  del video como  una imagen.
 
 ------------
 
