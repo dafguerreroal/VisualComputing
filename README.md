@@ -126,15 +126,15 @@ Se toma un video extrayendo sus frames para poder ser tratados como imagenes ind
 * **Resultados**:
 
 **Gray Scale**:
-+ ![Gray Scale](/Resultados/out_grey.JPG.png)
++ ![Gray Scale](/Resultados/out_grey.JPG)
 
 
 **Convolution Masks**:
-+ ![Convolution Masks](/Resultados/out_masks.JPG.png)
++ ![Convolution Masks](/Resultados/out_masks.JPG)
 
 
 **Ascii**:
-+ ![Gray Scale](/Resultados/out_ascii_software.JPG.png)
++ ![Gray Scale](/Resultados/out_ascii_software.JPG)
 
 
 
