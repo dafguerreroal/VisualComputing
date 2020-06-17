@@ -42,18 +42,21 @@ Se  aplican  3 mascaras de convolución recorriendo la imagen pixel a pixel, apl
 
 *Edge detection: Tiene como objetivo la identificación de puntos en una imagen digital en la que el brillo de la imagen cambia drásticamente o, más formalmente tiene discontinuidades, se usaron los siguientes Kernels:
 
+------------
 
 | 1 | 0 | -1|
 |---|---|---|
 | 0 | 0 | 0 |
 | -1 | 0 | 1|
 
+------------
 
 | 0 | -1 | 0 |
 |---|---|---|
 | -1 | 4 | -1 |
 | 0 | -1 | 0|
 
+------------
 
 | -1 | -1 | -1 |
 |---|---|---|
@@ -61,6 +64,8 @@ Se  aplican  3 mascaras de convolución recorriendo la imagen pixel a pixel, apl
 | -1 | -1 | -1|
 
 *Sharpen: Tecnica para aumentar la nitidez aparente de una imagen,se uso el siguiente Kernel:
+
+
 | 0 | -1 | 0 |
 |---|---|---|
 | -1 | 5 | -1 |
@@ -120,21 +125,32 @@ Para la implementacion de ASCII por hardware, se uso como base el siguiente [sha
 
 Se toma un video extrayendo sus frames para poder ser tratados como imagenes independientes, se les aplica el mismo [shader](https://github.com/georgehenryrowe/ShadersForProcessing3/blob/master/data/ascii.glsl) usado para las imagenes, se guardan en un vector del tamaño del video y es este vector el que se dibujara en el canvas.
 
-* **Medir la eficiencia computacional para las operaciones realizadas a los videos**:
+## Medir la eficiencia computacional para las operaciones realizadas a los videos:
 
 
-* **Resultados**:
+## Resultados
 
 **Gray Scale**:
+
+Imagen Original -- Escala de grises con promedio -- Escala de grises con Luma
+
 + ![Gray Scale](/Resultados/out_grey.JPG)
 
-
 **Convolution Masks**:
+
+Imagen Original -- GaussianBlur(3x3) -- EdgeDetection -- Sharpen
+
 + ![Convolution Masks](/Resultados/out_masks.JPG)
 
+**Histrogram**:
++ ![Gray Scale](/Resultados/out_histogram.JPG)
 
-**Ascii**:
+**Ascii Software**:
 + ![Gray Scale](/Resultados/out_ascii_software.JPG)
+
+**Ascii Shaders**:
++ ![Gray Scale](/Resultados/out_ascii_hardware.JPG)
+
 
 
 
